@@ -1,0 +1,197 @@
+
+  /* الأساسيات */
+.containerr {
+  margin-top: 100px;
+  width: 100%; 
+  margin-left: 0;
+}
+
+.section__title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: black;
+  font-family: 'Papyrus', 'Harrington', 'Wisp', 'Arkana', 'Rivendell', fantasy;
+}
+
+/* الحاوية للمشاريع */
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 60px;
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+}
+
+.portfolio__item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 400px;
+  width: 100%; /* تحديد ارتفاع 400px */
+}
+
+.portfolio__img {
+  width: 100%;
+  height: 100%; /* تحديد ارتفاع 100% */
+}
+
+/* عند التمرير على العنصر */
+.portfolio__hover {
+  background-color: var(--first-color);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio__item:hover .portfolio__hover {
+  opacity: 1;
+}
+
+.portfolio__title {
+  color: var(--text-white);
+  color: #fff;
+  font-family: 'Papyrus', 'Harrington', 'Wisp', 'Arkana', 'Rivendell', fantasy;
+  font-size: var(--large-font-size);
+  font-weight: var(--weight-500);
+  text-align: center;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+
+.portfolio__item:hover .portfolio__title {
+  transform: translateY(0);
+}
+
+/* تعديل modal */
+.portfolio__modal {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+
+.portfolio__modal-content {
+  background-color: var(--container-color);
+  max-width: 650px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: -3.5%;
+  right: -8.5%;
+  height: 50px;
+  width: 50px;
+  filter: invert(0.8);
+}
+
+.modal__title {
+  text-align: center;
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.modal__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  margin-bottom: 24px;
+}
+
+.modal__item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.item__icon {
+  display: flex;
+}
+
+.item__title,
+.item__details {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+
+.item__details {
+  font-weight: var(--weight-600);
+}
+
+.modal__img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Media Queries */
+
+/* عندما يكون العرض أقل من 1024px */
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr); /* 2 أعمدة */
+    gap: 20px;
+  }
+
+  .portfolio__item {
+    height: 350px; /* تقليل ارتفاع العناصر */
+  }
+
+  .section__title {
+    font-size: 4rem; /* تقليل حجم العنوان */
+  }
+}
+
+/* عندما يكون العرض أقل من 768px */
+@media screen and (max-width: 768px) {
+  .portfolio__container {
+    grid-template-columns: 1fr; /* عمود واحد */
+    gap: 15px;
+  }
+
+  .portfolio__item {
+    height: 300px; /* تقليل ارتفاع العناصر */
+  }
+
+  .section__title {
+    font-size: 3rem; /* تقليل حجم العنوان بشكل أكبر */
+  }
+
+  .modal__img {
+    height: 250px; /* تقليل حجم الصورة في الـ modal */
+  }
+}
+
+/* عندما يكون العرض أقل من 480px */
+@media screen and (max-width: 680px) {
+  .portfolio__title {
+    font-size: 1.2rem; /* تقليل حجم العنوان في الـ portfolio */
+  }
+
+  .modal__title {
+    font-size: 1.5rem; /* تقليل حجم العنوان في الـ modal */
+  }
+
+  .modal__list {
+    grid-template-columns: 1fr; /* عمود واحد في الـ modal */
+  }
+
+  .portfolio__item {
+    height: 250px; 
+  }
+}

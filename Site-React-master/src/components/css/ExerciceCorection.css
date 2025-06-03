@@ -1,0 +1,244 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.download-pdf-button {
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+}
+
+.download-pdf-button:hover {
+  background-color: #595a5c; 
+}
+
+.download-pdf-button i {
+  margin-right: 10px; 
+}
+
+.material-symbols-outlined {
+  font-size: 19px;
+}
+.section{
+  width: 130%;
+    margin-left: -15%;
+}
+
+  .top-headers {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .top-headers h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .top-headers input, .top-headers select {
+    margin-top: 10px;
+    padding: 8px;
+    margin-left: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .correction-button{
+    margin-top: 10px;
+    padding: 8px;
+    margin-left: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .project-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+   
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.zoomed-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 43, 43, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+  
+.close-zoom {
+  position: absolute;
+  top: 20px;
+  font-family: cursive;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-zoom:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  /* .row {
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .project-box {
+    /* float: left; */
+    /* margin: 30px; */
+    width: 30%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  
+  .project-box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+
+.img{
+  width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+  .title-telechrger{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+.title-telechrger span{
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+  .download-button-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    background-color: #23a9de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+
+.correction-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.correction-container h1{
+  text-align: start;
+}
+
+.correction-code {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.correction-code h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+pre {
+    width: 94%;
+    margin-left: 3%;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+  @media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .top-header h1 {
+        font-size: 2rem;
+    }
+
+    .top-header input {
+        width: 180px;
+    }
+    .correction-container{
+      flex-direction: column;
+    }
+    .correction-code {
+      width: 100%;
+    }
+    .correction-code h3{
+      width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .project-box {
+        width: 100%;
+    }
+}

@@ -1,0 +1,158 @@
+.top-header {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.top-header h1 {
+    font-weight: 600;
+    color: #444;
+    font-size: 2.5rem;
+}
+
+.top-header input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #d6d5d5;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.section {
+    padding-block: 5em;
+    width: 130%;
+    margin-left: -15%;
+}
+
+.project-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.project-box {
+    position: relative;
+    float: left;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.zoomed-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.Exercice{
+    font-family: cursive;
+}
+
+.close-zoom {
+    position: absolute;
+    top: 20px;
+    font-family: cursive;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close-zoom:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.download-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.download-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #61DAFB;
+    color: white;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+.download-button:hover {
+    background-color: #285bd4;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .top-header h1 {
+        font-size: 2rem;
+    }
+
+    .top-header input {
+        width: 180px;
+    }
+}
+@media (max-width: 680px) {
+    .project-box {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .project-container{
+        width: 70%;
+        margin-left: 10%;
+    }
+}

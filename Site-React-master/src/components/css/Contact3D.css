@@ -1,0 +1,143 @@
+
+
+.uf-contact-form-01 {
+      max-width: 900px;
+      margin: auto; 
+  }
+  
+  @media (min-width: 576px) {
+      .uf-contact-form-01 {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 20px;
+      }
+  }
+  
+  @media (max-width: 575px) {
+      .uf-contact-form-01 {
+          padding: 20px;
+      }
+  
+      .uf-img-contact-form-01 {
+          display: none; 
+      }
+      .uf-ct-01-btn-primary {
+          width: 100%; 
+      }
+      .form-control {
+          font-size: 16px; 
+      }
+  
+      .uf-ct-01-text-primary {
+          font-size: 20px; 
+      }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+      .uf-contact-form-01 {
+          padding: 40px 20px; 
+      }
+
+      .uf-ct-01-btn-primary {
+          width: 100%;
+      }
+  
+      .uf-img-contact-form-01 {
+          width: 80%; 
+          margin: 0 auto; 
+      }
+  
+      .uf-ct-01-text-primary {
+          font-size: 28px; 
+      }
+  }
+  
+  .uf-img-contact-form-01 {
+      max-width: 100%;
+      animation: uf-animation 4s ease-in-out 1s infinite alternate;
+      position: relative;
+  }
+  
+  .form-control:focus {
+      border-color: #a979ff;
+      box-shadow: 0 0 0 .25rem rgb(103 58 183 / 21%);
+  }
+
+  .me-2{
+    width: 60px;
+    height: auto;
+    background-color: #065c15;
+    border-radius: 50%;
+  }
+  
+  @keyframes uf-animation {
+      0% { top: 0px; }
+      50% { top: -30px; }
+      100% { top: 0px; }
+  }
+  
+  .uf-ct-01-btn-primary {
+      background-color: #864ef2;
+      color: #fff;
+  }
+
+  .uf-ct-016-text-primary{
+      color: #864ef2;
+  }
+  
+  .uf-ct-01-btn-primary:hover {
+      background-color: #641eec;
+      color: #fff;
+  }
+  
+  .uf-ct-01-text-primary {
+      color: #864ef2;
+  }
+
+.notification {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      width: 300px;
+      animation: slideIn 0.5s ease-in-out;
+    }
+    
+    @keyframes slideIn {
+      from {
+        top: -100px;
+        opacity: 0;
+      }
+      to {
+        top: 20px;
+        opacity: 1;
+      }
+    }
+    
+    .alert-success {
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    
+
+/* .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    animation: fadeInOut 3s linear;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; bottom: 0; }
+    10% { opacity: 1; bottom: 20px; }
+    90% { opacity: 1; bottom: 20px; }
+    100% { opacity: 0; bottom: 0; }
+  } */
+  
