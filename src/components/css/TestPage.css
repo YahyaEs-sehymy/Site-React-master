@@ -1,0 +1,156 @@
+/* General Layout */
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .khawi {
+    width: 100%;
+    height: 100px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .test-page {
+    width: 100%;
+    max-width: 800px;
+    min-width: 600px;
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Timer */
+  .timer {
+    text-align: end;
+    color: #747373;
+  }
+  
+  /* Result Styling */
+  .result {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .result.green {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .result.orange {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .result.red {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* FAQ Container */
+  .faq-container {
+    margin-bottom: 20px;
+  }
+
+  .faq h1{
+    font-family: 'Papyrus', 'Harrington', 'Wisp', 'Arkana', 'Rivendell', fantasy;
+    font-weight: 900;
+  }
+
+  .submitt{
+    margin-top: 20px;
+  }
+  
+  /* Question and Options */
+  .faq-itemm {
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-itemm input {
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  .faq-itemm label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-itemm label:hover {
+    color: #007bff;
+  }
+  
+  .faq-itemm input:checked + label {
+    color: #007bff;
+  }
+  
+  /* Buttons */
+  .faq-next-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-next-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Score and Feedback */
+  .score-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .score-container h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .score-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Emoji */
+  .emoji {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  
+  /* Transitions */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
